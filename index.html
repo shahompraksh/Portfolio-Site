@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Om Shah | Full Stack Developer & AI Enthusiast</title>
+  <meta name="description" content="Portfolio of Om Shah - Full Stack Developer, Frontend Designer, AI Enthusiast">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loading">
+    <div class="loading-content">
+      <div class="loading-spinner"></div>
+      <h2>Loading Om's Universe...</h2>
+    </div>
+  </div>
+
+  <!-- Voice Intro -->
+  <div class="voice-intro">
+    <div class="voice-content">
+      <div class="voice-icon">
+        <i class="fas fa-microphone"></i>
+      </div>
+      <h3>Voice Introduction</h3>
+      <p>Click to hear my introduction</p>
+      <button class="voice-btn" id="voiceBtn">
+        <i class="fas fa-play"></i>
+        <span>Play Intro</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
+
+  <!-- Music Control -->
+  <div class="music-control">
+    <button id="musicBtn" class="music-btn">
+      <i class="fas fa-music"></i>
+    </button>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-text">HELLO,</span>
+        <span class="logo-glow"></span>
+      </div>
+      <div class="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight">Om Shah</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            <span id="typing-text"></span>
+            <span class="cursor">|</span>
+          </h2>
+          <p class="hero-description">
+            Full Stack Developer | AI Enthusiast | Creative Designer
+            <br>Building the future, one line of code at a time.
+          </p>
+          <div class="hero-buttons">
+            <a href="#portfolio" class="btn btn-primary" data-scroll-target="portfolio">
+              <i class="fas fa-rocket"></i> View My Work
+            </a>
+            <a href="#contact" class="btn btn-secondary" data-scroll-target="contact">
+              <i class="fas fa-envelope"></i> Get In Touch
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="image-container">
+            <div class="profile-glow"></div>
+            <img src="PHOTO-2026-04-19-22-07-46.jpg" alt="Om Shah" class="profile-image">
+            <div class="floating-elements">
+              <div class="floating-code">&lt;/&gt;</div>
+              <div class="floating-rocket">🚀</div>
+              <div class="floating-brain">🧠</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <p>Scroll Down</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Hello! I'm Om Shah</h3>
+          <p>
+            I'm a passionate Full Stack Developer with expertise in modern web technologies,
+            AI integration, and creative design. My journey in tech started with a curiosity
+            about how things work, and it has evolved into a mission to create innovative
+            digital experiences that make a difference.
+          </p>
+          <p>
+            As a frontend developer, I specialize in creating responsive, user-friendly
+            interfaces using HTML5, CSS3, JavaScript, and modern frameworks like React.
+            My backend expertise includes Node.js, Express, and database management with
+            MongoDB and PostgreSQL.
+          </p>
+          <p>
+            I'm also deeply interested in AI and machine learning, integrating intelligent
+            features into web applications to enhance user experiences. When I'm not coding,
+            you'll find me exploring new technologies, contributing to open-source projects,
+            or designing futuristic user interfaces.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <h4>50+</h4>
+              <p>Projects Completed</p>
+            </div>
+            <div class="stat">
+              <h4>3+</h4>
+              <p>Years Experience</p>
+            </div>
+            <div class="stat">
+              <h4>100%</h4>
+              <p>Dedication</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <div class="image-wrapper">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&h=600&fit=crop" alt="Coding Workspace">
+            <div class="image-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">My Skills</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Frontend Development</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">HTML5/CSS3</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">React.js</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">TypeScript</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-server"></i> Backend Development</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">Node.js</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 88%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Express.js</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">MongoDB</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 82%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">PostgreSQL</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 78%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-brain"></i> AI & ML</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">OpenAI API</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Machine Learning</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">NLP</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">TensorFlow</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-palette"></i> Design & Tools</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">UI/UX Design</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Figma</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 88%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Adobe XD</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Git/GitHub</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">My Portfolio</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="AI Chatbot Project">
+            <div class="portfolio-overlay">
+              <div class="portfolio-links">
+                <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-content">
+            <h3>AI-Powered Chatbot</h3>
+            <p>Intelligent conversational AI built with OpenAI GPT and modern web technologies.</p>
+            <div class="portfolio-tags">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>OpenAI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="E-commerce Platform">
+            <div class="portfolio-overlay">
+              <div class="portfolio-links">
+                <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-content">
+            <h3>E-commerce Platform</h3>
+            <p>Full-stack e-commerce solution with payment integration and admin dashboard.</p>
+            <div class="portfolio-tags">
+              <span>MERN Stack</span>
+              <span>Stripe</span>
+              <span>MongoDB</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop" alt="Task Management App">
+            <div class="portfolio-overlay">
+              <div class="portfolio-links">
+                <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-content">
+            <h3>Task Management App</h3>
+            <p>Collaborative project management tool with real-time updates and team features.</p>
+            <div class="portfolio-tags">
+              <span>Vue.js</span>
+              <span>Firebase</span>
+              <span>Socket.io</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Weather Dashboard">
+            <div class="portfolio-overlay">
+              <div class="portfolio-links">
+                <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-content">
+            <h3>Weather Dashboard</h3>
+            <p>Beautiful weather app with location-based forecasts and interactive maps.</p>
+            <div class="portfolio-tags">
+              <span>JavaScript</span>
+              <span>API Integration</span>
+              <span>CSS3</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop" alt="Portfolio Website">
+            <div class="portfolio-overlay">
+              <div class="portfolio-links">
+                <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-content">
+            <h3>3D Portfolio Website</h3>
+            <p>Interactive 3D portfolio with animations and modern design principles.</p>
+            <div class="portfolio-tags">
+              <span>Three.js</span>
+              <span>WebGL</span>
+              <span>GSAP</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Social Media Dashboard">
+            <div class="portfolio-overlay">
+              <div class="portfolio-links">
+                <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-content">
+            <h3>Social Media Dashboard</h3>
+            <p>Analytics dashboard for social media management with data visualization.</p>
+            <div class="portfolio-tags">
+              <span>React</span>
+              <span>D3.js</span>
+              <span>Node.js</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Email</h3>
+              <p>shahomprakash2004@gmail.com</p>
+              <a href="mailto:shahomprakash2004@gmail.com" class="contact-link">Send Email</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="contact-details">
+              <h3>WhatsApp</h3>
+              <p>+91 9761819137</p>
+              <a href="https://wa.me/919761819137" class="contact-link" target="_blank">Send Message</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Location</h3>
+              <p>Kathmandu, Nepal</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-share-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Follow Me</h3>
+              <div class="social-links">
+                <a href="https://github.com/shahomprakash" target="_blank" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/omprakash077" target="_blank" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/omshahopi3" target="_blank" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/shah_omey07" target="_blank" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+          <div id="formMessage" class="form-message"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chatbot -->
+  <div class="chatbot">
+    <div class="chatbot-toggle">
+      <i class="fas fa-robot"></i>
+    </div>
+    <div class="chatbot-window">
+      <div class="chatbot-header">
+        <h3>Om Assistant</h3>
+        <span class="chatbot-close">&times;</span>
+      </div>
+      <div class="chatbot-messages" id="chatMessages">
+        <div class="message bot-message">
+          <div class="message-content">
+          How can I help you today?
+          </div>
+        </div>
+      </div>
+      <div class="chatbot-input">
+        <input type="text" id="chatInput" placeholder="Type your message...">
+        <button id="sendMessage">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-text">GET IN TOUCH</span>
+        </div>
+       
+        <div class="footer-social">
+          <a href="https://github.com/shahomprakash" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/omprakash077" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://x.com/omshahopi3" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/shah_omey07" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Om Shah. All rights reserved. Made with <i class="fas fa-heart"></i> and lots of coffee.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
